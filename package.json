@@ -1,0 +1,24 @@
+{
+  "name": "blokchen",
+  "version": "0.0.1",
+  "description": "Messing around with blockchain",
+  "main": "bin/main.js",
+  "scripts": {
+    "build": "babel src -d bin"
+  },
+  "repository": "https://github.com/leny/blokchen",
+  "author": "leny <info@flatland.be>",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "zouti": "^0.5.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "mitan-eko": "^0.1.0",
+    "response-time": "^2.3.2"
+  }
+}

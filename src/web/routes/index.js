@@ -10,6 +10,7 @@ import { Router } from "express";
 
 import home from "./home";
 import check from "./check";
+import transaction from "./transaction";
 import blocks from "./blocks";
 import latestBlock from "./blocks-latest";
 import blockAtIndex from "./blocks-at-index";
@@ -18,6 +19,7 @@ let oRouter = new Router();
 
 oRouter.all( "/", home );
 oRouter.get( "/check", check );
+oRouter.post( "/transaction", transaction );
 oRouter.get( "/blocks", blocks );
 oRouter.get( "/blocks/latest", latestBlock );
 oRouter.get( "/blocks/:index", blockAtIndex );

@@ -14,6 +14,7 @@ import transaction from "./transaction";
 import blocks from "./blocks";
 import latestBlock from "./blocks-latest";
 import blockAtIndex from "./blocks-at-index";
+import mine from "./mine";
 
 let oRouter = new Router();
 
@@ -23,5 +24,6 @@ oRouter.post( "/transaction", transaction );
 oRouter.get( "/blocks", blocks );
 oRouter.get( "/blocks/latest", latestBlock );
 oRouter.get( "/blocks/:index", blockAtIndex );
+oRouter.post( "/mine", mine );
 
 export default oRouter;
